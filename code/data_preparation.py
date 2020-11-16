@@ -6,13 +6,13 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 #% matplotlib inline
 
-df = pd.read_csv(path + "data_original.csv")
+df = pd.read_csv("HR_comma_sep")
 
 
-sales_dummies = pd.get_dummies(df.sales, prefix="sales_").astype("int")
+CEO_dummies = pd.get_dummies(df.CEO, prefix="CEO_").astype("int")
 salary_dummies = pd.get_dummies(df.salary, prefix="salary_").astype("int")
 
-data = pd.concat([sales_dummies, salary_dummies, df.drop("left", axis=1)], axis=1).drop(["sales", "salary"], axis=1)
+data = pd.concat([CEO_dummies, salary_dummies, df.drop("left", axis=1)], axis=1).drop(["CEO", "salary"], axis=1)
 data = pd.concat([data, df.left], axis=1)
 
 
