@@ -2,7 +2,7 @@
 # PREVER CEO
 ## Mega Hack 5 Edição
 
-Um projeto de Hackathon no Kaggle https://www.kaggle.com/ivaneia/prever-ceo
+Um projeto de Hackathon no Kaggle https://colab.research.google.com/drive/1YKWuxoW3adcRoD9otaLpE4AhmBfBu9j4?usp=sharing
 
 Os campos do conjunto de dados incluem:
 
